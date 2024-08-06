@@ -81,7 +81,7 @@ A related option is VS Code Dev Containers, which will open the project in your 
  - A valid Elastic Search account
 ### Quickstart
  
-1. Clone the repository and intialize the project: 
+1. Intialize the project: 
 ```
 azd init -t agent-openai-python-prompty-langchain-pinecone
 ```
@@ -93,11 +93,6 @@ azd auth login
 ```
 3. Set following environment variables:
 `AZURE_RESOURCE_GROUP` and `PINECONE_API_KEY`
-1. Create a new azd environment:
-```
-azd env new
-```
-Enter a name that will be used for the resource group. This will create a new folder in the .azure folder, and set it as the active environment for any calls to azd going forward.
 
 1. Provision and deploy the project to Azure: 
 ```
@@ -144,7 +139,7 @@ PINECONE_API_KEY= <Your PINECONE API>
 ```
 
 4. Now try to run it on your local
-`langchian serve`
+`langchain serve`
 
 1. you can go to http://localhost:8000/openai-functions-agent/playground/ to test.
 
